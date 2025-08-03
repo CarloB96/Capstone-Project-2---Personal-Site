@@ -1,0 +1,46 @@
+body {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+* {
+  color: #ffffff;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 👇 Forza trasparenza della sezione testo */
+.glass-card .card-body,
+.glass-card .custom-bg {
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+/* 👇 Stile testo leggibile */
+.glass-card .card-title,
+.glass-card .card-text {
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover */
+.glass-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
